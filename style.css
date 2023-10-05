@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+.imgLuminar{
+    width: 25%;
+    /* height: 100%; */
+}
+.navIcon{
+    display: flex;
+}
+.navMenuBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.iccbar{
+    transform: scale(.7);
+}
+.iccbar:hover{
+    border: none;
+}
+.menuBtn{
+    border: none !important;
+    outline: none !important;
+}
+.menuBtn:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+.home{
+    color: #6b1297 !important;
+    font-weight: 700;
+    font-size: larger;
+    border-bottom: #6b1297 solid;
+    padding-bottom: 0;
+}
+/* ... Previous CSS code ... */
+
+.navDetails {
+    margin-left: 4px;
+    color: black;
+    font-weight: 500;
+    margin-top: 4px;
+    font-size: large;
+    padding-bottom: 0;
+    position: relative; /* Added this line to set the position */
+}
+.navDetails:hover{
+    color: #6b1297;
+    font-weight: 600;
+}
+
+.navDetails::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    border-bottom: 3px solid #6b1297; /* Border thickness and color */
+    transition: width .3s ease-in-out; /* Added transition for animation */
+}
+
+.navDetails:hover::after {
+    width: 100%;
+}
