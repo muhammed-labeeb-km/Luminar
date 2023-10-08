@@ -160,3 +160,30 @@ body{
     }
     
   }
+
+  @media screen and (max-width:450px){
+    .carousel-caption{
+      margin-bottom: -10px;
+    }
+    .carousel img{
+      height: 300px;
+    }
+    .headingMain{
+      /* margin-top: 50px !important; */
+      font-size: 4vw;
+      margin-bottom: -30px;
+    }
+    .carousel p{
+      font-size: 9px;
+    }
+    .btnC{
+      height: 30px !important;
+      font-size: 10px;
+    }
+    .queryFree{
+      width: 160px;
+      height: 30px;
+      font-size: 12px !important;
+      margin-left: 10% !important;
+    }
+  }
