@@ -6,14 +6,13 @@
     <title>Luminar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+     
 </head>
 <body class=" m-0 border-0 bd-example m-0 border-0 bg-light">
 
     <!-- Example Code -->
-    
-    <nav class="navbar bg-white navbar-expand-lg ">
+    <div>
+    <nav class="navbar bg-white navbar-expand-lg sticky-top" >
       <div class="container">
         <img class="imgLuminar" src="./Pictures/luminar.png" alt="">
         <button class="navbar-toggler menuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,6 +42,85 @@
         </div>
       </div>
     </nav>
+    </div>
+<!-- NAvigation end  -->
     
+<div id="carouselExampleFade" class="carousel slide carousel-fade shaded-carousel1" data-bs-ride="carousel">
+  <div class="carousel-inner px-0 mt-0">
+    <div class="carousel-item active ps-0">
+      <img src="./Pictures/l1.jpg" class="d-block text-end" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Kerala's No.1 IT Finishing School<br>100% Placement Assistance</h1><br><br>
+        <p>We LUMINAR TECHNOLAB offers best software training and placement in emerging technologies like
+          Big Data, Hadoop, Spark,Data Scince, Machine Learning, PYTHON, Software Testing.<br><br><br>
+        <button class="btn  rounded-5  text-white btnC ">View Courses</button></p>
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./Pictures/WhatsApp Image 2023-10-05 at 16.48.12.jpg" class="d-block " alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Data Science, ML & AI<br>Big Data - Hadoop & Spark<br>Python Data Science</h1><br><br>
+        <p>We LUMINAR TECHNOLAB offers best software training and placement in emerging technologies like
+          Big Data, Hadoop, Spark,Data Scince, Machine Learning, Deep Learning and AI. <br><br><br><button class="btn  rounded-5  text-white btnC ">View Courses</button></p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!-- MODAL -->
+<button type="button" class="btn btn-primary mt-4 ms-5 text-white fs-5 rounded-5 border-0" style="background-color: #6b1297 ;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Get Free Training Quote
+</button>
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content px-5 pt-5 pb-3">
+        
+        <div class="modal-body">
+          <div class="text-end w-100">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <h1 class="modal-title fs-5 wigt" id="staticBackdropLabel">Get Training Quote for free</h1>
+          <br>
+          <input type="text " class="border-0 w-100 fs-5" placeholder="Name" >
+          <hr>
+          <input type="email " class="border-0 w-100 fs-5" placeholder="Email" >
+          <hr>
+          <input type="number " class="border-0 w-100 fs-5" placeholder="Phone Number" >
+          <hr>
+          <select name="Select Course intrested in"  id="" class="border-0 w-100 text-black fs-5">
+            <option value="" disabled selected>Select Course interested in</option>
+            <option value="">Python</option>
+            <option value="">Mearn Stack</option>
+            <option value="">Machine Learning</option>
+          </select>
+          <hr>
+          <input type="text " class="border-0 w-100 fs-5" placeholder="City" >
+          <hr>
+          <textarea name="" id=""  rows="3" class="w-100 border-0 fs-5" placeholder="Comments" ></textarea>
+          <hr>
+        </div>
+        <button type="button" class="btn text-white wBtn ms-4" style="background-color: #6b1297;">SUBMIT QUERY</button>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+
   </body>
 </html>

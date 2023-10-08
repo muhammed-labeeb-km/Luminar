@@ -43,7 +43,7 @@ body{
     margin-top: 4px;
     font-size: large;
     padding-bottom: 0;
-    position: relative; /* Added this line to set the position */
+    position: relative; 
 }
 .navDetails:hover{
     color: #6b1297;
@@ -57,10 +57,109 @@ body{
     left: 50%;
     transform: translateX(-50%);
     width: 0;
-    border-bottom: 3px solid #6b1297; /* Border thickness and color */
-    transition: width .3s ease-in-out; /* Added transition for animation */
+    border-bottom: 3px solid #6b1297; 
+    transition: width .3s ease-in-out; 
 }
 
 .navDetails:hover::after {
     width: 100%;
 }
+  .carousel p{
+    width:65%;
+    text-align: Left;
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.carousel h1{
+    font-size:3vw;
+    text-align: left;
+    font-weight:600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.carousel img{
+    height: 550px;
+    min-width: 100%;
+    filter:brightness(50%);
+}
+
+.carousel p {
+    animation: slide-up 2s ease-in-out; 
+  }
+  .carousel h1{
+    animation: slide-upp 2s ease-in-out; 
+  }
+
+@keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-upp {
+    0% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+  .btnC{
+    background-color: #6b1297 !important;
+    font-size: larger;
+    height: 60px;
+  }
+  .modal-body input:focus{
+    border: none;
+    outline: none;
+    
+  }
+  .modal-body select{
+    font-weight: 500;
+  }
+  .modal-body textarea{
+    outline: none;
+    
+  }
+  .modal-body select:focus{
+    border: none;
+    outline: none; 
+  }
+
+  .wBtn{
+    width: 40%;
+  }
+  .wigt{
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 1000px) {
+   .carousel-item p{
+    font-size: 13px;
+    width: 80%;
+   }
+   .carousel-item h1{
+    font-size: 2.7vw;
+   }
+  }
+
+  @media screen and (max-width: 790px) {
+    .carousel img {
+      height: 300; /* Set height to auto for responsive images */
+    }
+  
+    .carousel h1 {
+      font-size: 4vw; /* Adjust font size for smaller screens */
+    }
+  
+    .carousel p {
+      font-size: 15px; /* Adjust font size for smaller screens */
+    }
+  }
