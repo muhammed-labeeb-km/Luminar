@@ -166,7 +166,7 @@ body{
       margin-bottom: -10px;
     }
     .carousel img{
-      height: 300px;
+      height: 300px !important;
     }
     .headingMain{
       /* margin-top: 50px !important; */
@@ -187,3 +187,26 @@ body{
       margin-left: 10% !important;
     }
   }
+
+  .fNav{
+    background-color: #6b1297;
+  }
+
+  .lButton{
+
+    background-color: white;
+    color: #6b1297 !important;
+    font-weight: 500;
+    border-color: #6b1297 !important;
+    border: solid;
+  }
+
+  .lButton:hover{
+    color: white !important;
+    font-weight: 600;
+    background-color: #6b1297;
+  }
+  .hovershadow:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+    transform: scale(1.01);
+}
